@@ -12,10 +12,14 @@ OpponentsProfileTeamExpt - 0x44CC
 	-- Test values:
 		-- Expert+ v2: 4C440000 -> CC440000
 
+------
 ZoneProfileDefault::Too Far Behind
+------
 7630054F8E085CA4: 5.0 - max zone-based pacing boost? (all 5.0 - sole profile identical to SART Expert profiles)
 
+------
 OpponentsProfileTeamExpt::Teammate1
+------
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
 	-- Normal, Hard, and Expert: 1.4
 	-- Test values:
@@ -51,11 +55,10 @@ OpponentsProfileTeamExpt::Teammate1
 	-- Hard: 0.2
 	-- Expert: 0.0
 
-98543DB78E085CA4: 8.0 - ??? (TSR only)
-	-- Normal, Hard: 25.0
-	-- Expert: 8.0
+EC1FF78D8E085CA4: 0.0 - ???
+	-- Normal, Hard, and Expert: 0.0
 	-- Test values:
-		-- Expert+ v2: 0.0
+		-- Expert+ v2: 20.0
 
 181C509B8E085CA4: 5.0 - ??? (TSR only)
 	-- Normal, Hard, and Expert: 5.0 (except 20.0 for Default! And non-team KOTH)
@@ -70,6 +73,17 @@ OpponentsProfileTeamExpt::Teammate1
 85994FB48E085CA4: 0.0 - ??? (TSR only)
 	-- Normal, Hard, and Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
 
+98543DB78E085CA4: 8.0 - ??? (TSR only)
+	-- Normal, Hard: 25.0
+	-- Expert: 8.0
+	-- Test values:
+		-- Expert+ v2: 0.0
+
+C61D13C38E085CA4: 0.0 - ??? (TSR only)
+	-- Normal, Hard, and Expert: 0.0
+	-- Test values:
+		-- Expert+ v2: 2.0
+
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
 	-- Normal, Hard, and Expert: 0.7
 	-- Test values:
@@ -78,7 +92,9 @@ OpponentsProfileTeamExpt::Teammate1
 		-- SuperExpert+: 1.08
 		-- Expert+ v2: 1.0
 
+------
 OpponentsProfileTeamExpt::Opponent1 (where different)
+------
 8C2856078E085CA4: 1.2 - max pacing
 	-- Normal: 1.2
 	-- Hard and Expert: 1.4 (or 1.2 for Hard and Expert in non-team)
@@ -89,11 +105,17 @@ OpponentsProfileTeamExpt::Opponent1 (where different)
 	-- Test values:
 		-- Crazy video: 3.0
 
-98543DB78E085CA4: 8.0 - ???
-	-- Normal, Hard: 8.0 (alternating 8.0, 16.0, 24.0)
+EC1FF78D8E085CA4: 20.0 - ???
+	-- Normal, Hard, and Expert: 20.0
 
 20F43FAE1267E4FB: 3 - start boost
 	-- Normal: 1
+
+98543DB78E085CA4: 8.0 - ???
+	-- Normal, Hard: 8.0 (alternating 8.0, 16.0, 24.0)
+
+C61D13C38E085CA4: 2.0 - ???
+	-- Normal, Hard, and Expert: 2.0
 
 75A392F88E085CA4: 0.8 - min pacing
 	-- Normal, Hard, and Expert: 0.8
