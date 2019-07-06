@@ -1,0 +1,135 @@
+------
+TSR / General Stuff
+------
+OpponentsProfileExpt - 0x444C
+OpponentsProfileTeamExpt - 0x44CC
+	-- Not much difference except random distance(?) values
+		-- Slightly higher in non-team class for Teammate1 / Teammate 2
+		-- Slightly lower for Opponent1 etc.
+	-- Even "Default/On" flag is kept the same (team stuff?)
+	-- Teammate1 / Teammate2 thus appear to become weak opponents
+		-- Maybe they're not used at all? Might just recycle Opponents...
+	-- Test values:
+		-- Expert+ v2: 4C440000 -> CC440000
+
+ZoneProfileDefault::Too Far Behind
+7630054F8E085CA4: 5.0 - max zone-based pacing boost? (all 5.0 - sole profile identical to SART Expert profiles)
+	-- Test values:
+		-- Expert+ v3: 20.0
+		-- Expert+ v4: 10.0
+
+OpponentsProfileTeamExpt::Teammate1
+8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
+	-- Normal, Hard, and Expert: 1.4
+	-- Test values:
+		-- Crazy video: 1.4 (oops!)
+		-- Expert+: 1.6
+		-- SuperExpert+: 3.0 (TODO for SART)
+		-- Expert+ v4: 2.0
+
+5B5543118E085CA4: 0.5 - ???
+	-- Normal, Hard, and Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
+
+3D4E421D8E085CA4: 0.5 - ??? (TSR only)
+	-- Normal, Hard, and Expert: 0.5 (0 for Eggpawn only? And various Opponent non-team KOTH)
+
+856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
+	-- Normal, Hard, and Expert: 1.0
+	-- Test values:
+		-- Crazy video: 5.0
+		-- Expert+: 1.2
+		-- SuperExpert+: 2.0
+		-- Expert+ v2: 1.25
+		-- Expert+ v4: 2.0
+
+6607CC548E085CA4: 1.0 - drifting! (TSR only)
+	-- Hard and Expert: 1.0
+	-- Normal: 0.8
+	-- Test values:
+		-- Expert+ v4: 1000.0
+
+8FFE5B568E085CA4: 0.0 - stunts!
+	-- Normal: 0.5
+	-- Hard: 0.2
+	-- Expert: 0.0
+
+98543DB78E085CA4: 8.0 - ??? (TSR only)
+	-- Normal, Hard: 25.0
+	-- Expert: 8.0
+
+181C509B8E085CA4: 5.0 - ??? (TSR only)
+	-- Normal, Hard, and Expert: 5.0 (except 20.0 for Default! And non-team KOTH)
+
+20F43FAE1267E4FB: 3 - start boost
+	-- Normal: 2
+	-- Hard: 2
+	-- Expert: 3
+
+85994FB48E085CA4: 0.0 - ??? (TSR only)
+	-- Normal, Hard, and Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
+
+75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
+	-- Normal, Hard, and Expert: 0.7
+	-- Test values:
+		-- Crazy video: 1.2
+		-- Expert+: 1.0
+		-- SuperExpert+: 1.08
+		-- Expert+ v2: 1.25
+		-- Expert+ v3: 1.0 (find-replace on all difficulties)
+		-- Expert+ v4: 2.0
+
+OpponentsProfileTeamExpt::Opponent1 (where different)
+8C2856078E085CA4: 1.2 - max pacing
+	-- Normal: 1.2
+	-- Hard and Expert: 1.4 (or 1.2 for Hard and Expert in non-team)
+
+856C17428E085CA4: 1.08 - target pacing
+	-- Hard: 1.08 (Oops! 1.04 in non-team)
+	-- Expert: 1.08
+	-- Test values:
+		-- Crazy video: 3.0
+
+98543DB78E085CA4: 8.0 - ???
+	-- Normal, Hard: 8.0 (alternating 8.0, 16.0, 24.0)
+
+20F43FAE1267E4FB: 3 - start boost
+	-- Normal: 1
+
+75A392F88E085CA4: 0.8 - min pacing
+	-- Normal, Hard, and Expert: 0.8
+
+------
+SART-Specific Stuff
+------
+E4344C74 (OpponentsProfileClassAllStarMin) -> 06E2A975
+C0AFC8DE (OpponentsProfileClassAllStarMed) -> 06E2A975
+5ECFEC21 (OpponentsProfileClassAllStarMax) -> 06E2A975
+06E2A975 (OpponentsProfileClassAllStarMen)
+
+::Opponent2
+9337EB038E085CA4: 0.92 - ??? (not in TSR)
+	-- Expert: 0.92 (-0.01 per opponent)
+5B5543118E085CA4: 1.0 - ???
+	-- Expert: 1.0 (-0.1 per opponent)
+270A82808E085CA4: 0.97 - ??? (not in TSR)
+	-- Expert: 0.97 (-0.01 per opponent)
+9EF7F4A98E085CA4: 0.2 - ??? (partially in TSR - Default, Koth, C7Surv only? All 0.1)
+	-- Expert: 0.2 (generally -0.01 per opponent, with steps)
+3BFB49E58E085CA4: 1.0 - ??? (not in TSR)
+	-- Expert: 1.0 (-0.01 per opponent)
+4C7EB8F78E085CA4: 0.93 - ??? (not in TSR)
+	-- Expert: 0.93 (-0.01 per opponent)
+
+::Opponent6
+9337EB038E085CA4: 0.88 - ???
+	-- Expert: 0.88
+
+------
+TODO / Ideas / Etc.
+------
+Heretic difficulty puns
+	-- Thou needeth a shock-wisp
+	-- Yellowboosts-r-us
+	-- Bringest them oneth
+	-- Thou art a SART-meister
+	-- Boost stacking possesses thee
