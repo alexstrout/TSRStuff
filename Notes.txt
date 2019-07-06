@@ -14,9 +14,6 @@ OpponentsProfileTeamExpt - 0x44CC
 
 ZoneProfileDefault::Too Far Behind
 7630054F8E085CA4: 5.0 - max zone-based pacing boost? (all 5.0 - sole profile identical to SART Expert profiles)
-	-- Test values:
-		-- Expert+ v3: 20.0
-		-- Expert+ v4: 10.0
 
 OpponentsProfileTeamExpt::Teammate1
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
@@ -25,13 +22,17 @@ OpponentsProfileTeamExpt::Teammate1
 		-- Crazy video: 1.4 (oops!)
 		-- Expert+: 1.6
 		-- SuperExpert+: 3.0 (TODO for SART)
-		-- Expert+ v4: 2.0
+		-- Expert+ v2: 1.6
 
 5B5543118E085CA4: 0.5 - ???
 	-- Normal, Hard, and Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
+	-- Test values:
+		-- Expert+ v2: 0.0
 
 3D4E421D8E085CA4: 0.5 - ??? (TSR only)
 	-- Normal, Hard, and Expert: 0.5 (0 for Eggpawn only? And various Opponent non-team KOTH)
+	-- Test values:
+		-- Expert+ v2: 0.0
 
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
 	-- Normal, Hard, and Expert: 1.0
@@ -39,14 +40,11 @@ OpponentsProfileTeamExpt::Teammate1
 		-- Crazy video: 5.0
 		-- Expert+: 1.2
 		-- SuperExpert+: 2.0
-		-- Expert+ v2: 1.25
-		-- Expert+ v4: 2.0
+		-- Expert+ v2: 1.2
 
 6607CC548E085CA4: 1.0 - drifting! (TSR only)
 	-- Hard and Expert: 1.0
 	-- Normal: 0.8
-	-- Test values:
-		-- Expert+ v4: 1000.0
 
 8FFE5B568E085CA4: 0.0 - stunts!
 	-- Normal: 0.5
@@ -56,9 +54,13 @@ OpponentsProfileTeamExpt::Teammate1
 98543DB78E085CA4: 8.0 - ??? (TSR only)
 	-- Normal, Hard: 25.0
 	-- Expert: 8.0
+	-- Test values:
+		-- Expert+ v2: 0.0
 
 181C509B8E085CA4: 5.0 - ??? (TSR only)
 	-- Normal, Hard, and Expert: 5.0 (except 20.0 for Default! And non-team KOTH)
+	-- Test values:
+		-- Expert+ v2: 20.0
 
 20F43FAE1267E4FB: 3 - start boost
 	-- Normal: 2
@@ -74,9 +76,7 @@ OpponentsProfileTeamExpt::Teammate1
 		-- Crazy video: 1.2
 		-- Expert+: 1.0
 		-- SuperExpert+: 1.08
-		-- Expert+ v2: 1.25
-		-- Expert+ v3: 1.0 (find-replace on all difficulties)
-		-- Expert+ v4: 2.0
+		-- Expert+ v2: 1.0
 
 OpponentsProfileTeamExpt::Opponent1 (where different)
 8C2856078E085CA4: 1.2 - max pacing
