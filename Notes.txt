@@ -11,11 +11,20 @@ OpponentsProfileTeamExpt - 0x44CC
 		-- Maybe they're not used at all? Might just recycle Opponents...
 	-- Test values:
 		-- Expert+ v2: 4C440000 -> CC440000
+		-- Expert+ Test: 4C440000 -> CC440000
 
 ------
 ZoneProfileDefault::Too Far Behind
 ------
+BA9606038E085CA4: max total distance? (e.g. ZoneProfileStartline)
+EDA7534B8E085CA4: min zone-based distance?
 7630054F8E085CA4: 5.0 - max zone-based pacing boost? (all 5.0 - sole profile identical to SART Expert profiles)
+6D59A5998E085CA4: max zone-based distance?
+
+------
+HandlingProfile::knuckles
+------
+D65D22CC8E085CA4: 0.07 - curve?
 
 ------
 OpponentsProfileTeamExpt::Teammate1
@@ -45,6 +54,7 @@ OpponentsProfileTeamExpt::Teammate1
 		-- Expert+: 1.2
 		-- SuperExpert+: 2.0
 		-- Expert+ v2: 1.2
+		-- Expert+ Test: 1.2
 
 6607CC548E085CA4: 1.0 - drifting! (TSR only)
 	-- Hard and Expert: 1.0
@@ -84,6 +94,8 @@ C61D13C38E085CA4: 0.0 - ??? (TSR only)
 	-- Test values:
 		-- Expert+ v2: 2.0
 
+F88477EE8E085CA4: 0.5 - ??? (??? only?)
+
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
 	-- Normal, Hard, and Expert: 0.7
 	-- Test values:
@@ -91,6 +103,7 @@ C61D13C38E085CA4: 0.0 - ??? (TSR only)
 		-- Expert+: 1.0
 		-- SuperExpert+: 1.08
 		-- Expert+ v2: 1.0
+		-- Expert+ Test: 1.2
 
 ------
 OpponentsProfileTeamExpt::Opponent1 (where different)
