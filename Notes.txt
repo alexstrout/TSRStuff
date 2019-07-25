@@ -24,7 +24,21 @@ EDA7534B8E085CA4: min zone-based distance?
 ------
 HandlingProfile::knuckles
 ------
-D65D22CC8E085CA4: 0.07 - curve?
+80F1AE128E085CA4: -6.0 - ???
+
+3F1D8D1F8E085CA4: 10.0 - ???
+305E0A4C8E085CA4: 0.35 - ???
+
+8402E7618E085CA4: 2.0 - ???
+C49F62A58E085CA4: 0.2 - ???
+
+E276D2C38E085CA4: 25.0 - inner curve avoid distance?
+D65D22CC8E085CA4: 0.07 - drifting curve? (lower - crashing into inner turn, e.g. Ice Mountain)
+
+4EF2DCDA8E085CA4: 40.0 - outer curve avoid distance?
+1F755CE58E085CA4: 0.2 - drifting curve? (higher - straighter, e.g. Frozen Junkyard)
+
+41C39AF78E085CA4: 0.59 - max(?) drift throttle?
 
 ------
 OpponentsProfileTeamExpt::Teammate1
