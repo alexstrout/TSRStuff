@@ -61,6 +61,8 @@ OpponentsProfileTeamExpt::Teammate1
 	-- Test values:
 		-- Expert+ v2: 0.0
 
+6D9FC8278E085CA4: -10.0 - ??? (TSR only)
+
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
 	-- Normal, Hard, and Expert: 1.0
 	-- Test values:
@@ -79,15 +81,29 @@ OpponentsProfileTeamExpt::Teammate1
 	-- Hard: 0.2
 	-- Expert: 0.0
 
-EC1FF78D8E085CA4: 0.0 - ???
+E4DA7A628E085CA4: 40.0 - target position? (decreases per opponent in SART)
+
+5C20EE628E085CA4: 0.0 (TSR only)
+
+CDECA47D8E085CA4: 20.0 (TSR only)
+
+600926808E085CA4: 40.0 - target position? (decreases per opponent in SART)
+
+1A8E28838E085CA4: 35.0 (always 35 in SART???)
+
+EC1FF78D8E085CA4: 0.0 - ??? (25 in SART Mental, 20 in Max / Med)
 	-- Normal, Hard, and Expert: 0.0
 	-- Test values:
 		-- Expert+ v2: 20.0
+
+CF7E08938E085CA4: 30.0 (TSR only)
 
 181C509B8E085CA4: 5.0 - ??? (TSR only)
 	-- Normal, Hard, and Expert: 5.0 (except 20.0 for Default! And non-team KOTH)
 	-- Test values:
 		-- Expert+ v2: 20.0
+
+ABBF319E8E085CA4: 200.0 (TSR only)
 
 20F43FAE1267E4FB: 3 - start boost
 	-- Normal: 2
@@ -96,6 +112,10 @@ EC1FF78D8E085CA4: 0.0 - ???
 
 85994FB48E085CA4: 0.0 - ??? (TSR only)
 	-- Normal, Hard, and Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
+
+132AB6B58E085CA4: 0.0 - super target distance? (Opp2 only in SART)
+
+514429B78E085CA4: 200.0 (TSR only)
 
 98543DB78E085CA4: 8.0 - ??? (TSR only)
 	-- Normal, Hard: 25.0
@@ -108,7 +128,15 @@ C61D13C38E085CA4: 0.0 - ??? (TSR only)
 	-- Test values:
 		-- Expert+ v2: 2.0
 
-F88477EE8E085CA4: 0.5 - ??? (??? only?)
+834C23EA8E085CA4: 5.0 (10 in SART?)
+
+F88477EE8E085CA4: 0.5 - ??? (TSR only)
+
+61B501EF8E085CA4: 0.0 (TSR only)
+
+7F16B9F38E085CA4: 40.0 (decreases per opp in SART)
+
+22F398F48E085CA4: 0.0 (TSR only)
 
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
 	-- Normal, Hard, and Expert: 0.7
