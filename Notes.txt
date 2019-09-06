@@ -44,27 +44,29 @@ D65D22CC8E085CA4: 0.07 - drifting curve? (lower - crashing into inner turn, e.g.
 OpponentsProfileTeamExpt::Teammate1
 ------
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
-	-- Normal, Hard, and Expert: 1.4
+	-- Normal, Hard, Expert: 1.4
 	-- Test values:
 		-- Crazy video: 1.4 (oops!)
 		-- Expert+: 1.6
 		-- SuperExpert+: 3.0 (TODO for SART)
 		-- Expert+ v2: 1.6
 
-5B5543118E085CA4: 0.5 - ???
-	-- Normal, Hard, and Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
+5B5543118E085CA4: 0.5 - pathing weight? (-0.1 per opponent in SART)
+	-- Normal, Hard, Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
 	-- Test values:
 		-- Expert+ v2: 0.0
 
 3D4E421D8E085CA4: 0.5 - ??? (TSR only)
-	-- Normal, Hard, and Expert: 0.5 (0 for Eggpawn only? And various Opponent non-team KOTH)
+	-- Normal, Hard, Expert: 0.5 (0 for Eggpawn only? And various Opponent non-team KOTH)
 	-- Test values:
 		-- Expert+ v2: 0.0
 
 6D9FC8278E085CA4: -10.0 - ??? (TSR only)
+	-- Normal, Hard: -30.0
+	-- Expert: -10.0
 
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
-	-- Normal, Hard, and Expert: 1.0
+	-- Normal, Hard, Expert: 1.0
 	-- Test values:
 		-- Crazy video: 5.0
 		-- Expert+: 1.2
@@ -81,29 +83,33 @@ OpponentsProfileTeamExpt::Teammate1
 	-- Hard: 0.2
 	-- Expert: 0.0
 
-E4DA7A628E085CA4: 40.0 - target position? (decreases per opponent in SART)
+E4DA7A628E085CA4: 40.0 - target distance? (decreases per opponent in SART)
 
-5C20EE628E085CA4: 0.0 (TSR only)
+5C20EE628E085CA4: 0.0 - ??? (TSR only)
+	-- Normal, Hard: 0.1
+	-- Expert: 0.0
 
-CDECA47D8E085CA4: 20.0 (TSR only)
+CDECA47D8E085CA4: 20.0 - ??? (TSR only)
+	-- Normal, Hard, Expert: 20.0
 
-600926808E085CA4: 40.0 - target position? (decreases per opponent in SART)
+600926808E085CA4: 40.0 - target distance? (decreases per opponent in SART)
 
 1A8E28838E085CA4: 35.0 (always 35 in SART???)
 
 EC1FF78D8E085CA4: 0.0 - ??? (25 in SART Mental, 20 in Max / Med)
-	-- Normal, Hard, and Expert: 0.0
+	-- Normal, Hard, Expert: 0.0
 	-- Test values:
 		-- Expert+ v2: 20.0
 
 CF7E08938E085CA4: 30.0 (TSR only)
 
 181C509B8E085CA4: 5.0 - ??? (TSR only)
-	-- Normal, Hard, and Expert: 5.0 (except 20.0 for Default! And non-team KOTH)
+	-- Normal, Hard, Expert: 5.0 (except 20.0 for Default! And non-team KOTH)
 	-- Test values:
 		-- Expert+ v2: 20.0
 
-ABBF319E8E085CA4: 200.0 (TSR only)
+ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
+	-- Normal, Hard, Expert: 50.0
 
 20F43FAE1267E4FB: 3 - start boost
 	-- Normal: 2
@@ -111,11 +117,13 @@ ABBF319E8E085CA4: 200.0 (TSR only)
 	-- Expert: 3
 
 85994FB48E085CA4: 0.0 - ??? (TSR only)
-	-- Normal, Hard, and Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
+	-- Normal, Hard, Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
 
 132AB6B58E085CA4: 0.0 - super target distance? (Opp2 only in SART)
 
-514429B78E085CA4: 200.0 (TSR only)
+514429B78E085CA4: 50.0 - max distance? (TSR only)
+	-- Normal: 50.0
+	-- Hard, Expert: 15.0 (50.0 in non-team)
 
 98543DB78E085CA4: 8.0 - ??? (TSR only)
 	-- Normal, Hard: 25.0
@@ -124,7 +132,7 @@ ABBF319E8E085CA4: 200.0 (TSR only)
 		-- Expert+ v2: 0.0
 
 C61D13C38E085CA4: 0.0 - ??? (TSR only)
-	-- Normal, Hard, and Expert: 0.0
+	-- Normal, Hard, Expert: 0.0
 	-- Test values:
 		-- Expert+ v2: 2.0
 
@@ -134,12 +142,12 @@ F88477EE8E085CA4: 0.5 - ??? (TSR only)
 
 61B501EF8E085CA4: 0.0 (TSR only)
 
-7F16B9F38E085CA4: 40.0 (decreases per opp in SART)
+7F16B9F38E085CA4: 40.0 - target distance? (decreases per opponent in SART)
 
 22F398F48E085CA4: 0.0 (TSR only)
 
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
-	-- Normal, Hard, and Expert: 0.7
+	-- Normal, Hard, Expert: 0.7
 	-- Test values:
 		-- Crazy video: 1.2
 		-- Expert+: 1.0
@@ -161,19 +169,25 @@ OpponentsProfileTeamExpt::Opponent1 (where different)
 		-- Crazy video: 3.0
 
 EC1FF78D8E085CA4: 20.0 - ???
-	-- Normal, Hard, and Expert: 20.0
+	-- Normal, Hard, Expert: 20.0
+
+ABBF319E8E085CA4: 200.0 - max distance? (TSR only)
+	-- Normal, Hard, Expert: 200.0
 
 20F43FAE1267E4FB: 3 - start boost
 	-- Normal: 1
+
+514429B78E085CA4: 200.0 - max distance?
+	-- Normal, Hard, Expert: 200.0
 
 98543DB78E085CA4: 8.0 - ???
 	-- Normal, Hard: 8.0 (alternating 8.0, 16.0, 24.0)
 
 C61D13C38E085CA4: 2.0 - ???
-	-- Normal, Hard, and Expert: 2.0
+	-- Normal, Hard, Expert: 2.0
 
 75A392F88E085CA4: 0.8 - min pacing
-	-- Normal, Hard, and Expert: 0.8
+	-- Normal, Hard, Expert: 0.8
 
 ------
 SART-Specific Stuff
