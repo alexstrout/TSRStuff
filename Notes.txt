@@ -12,6 +12,7 @@ OpponentsProfileTeamExpt - 0x44CC
 	-- Test values:
 		-- Expert+ v2: 4C440000 -> CC440000
 		-- Expert+ Test: 4C440000 -> CC440000
+		-- Expert+ v3: [All] -> CC440000 (etc.)
 
 ------
 ZoneProfileDefault::Too Far Behind
@@ -50,6 +51,7 @@ OpponentsProfileTeamExpt::Teammate1
 		-- Expert+: 1.6
 		-- SuperExpert+: 3.0 (TODO for SART)
 		-- Expert+ v2: 1.6
+		-- Expert+ v3: 1.8
 
 5B5543118E085CA4: 0.5 - pathing weight? (-0.1 per opponent in SART)
 	-- Normal, Hard, Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
@@ -154,6 +156,7 @@ F88477EE8E085CA4: 0.5 - ??? (TSR only)
 		-- SuperExpert+: 1.08
 		-- Expert+ v2: 1.0
 		-- Expert+ Test: 1.2
+		-- Expert+ v3: 1.0 (all difficulties)
 
 ------
 OpponentsProfileTeamExpt::Opponent1 (where different)
@@ -167,6 +170,7 @@ OpponentsProfileTeamExpt::Opponent1 (where different)
 	-- Expert: 1.08
 	-- Test values:
 		-- Crazy video: 3.0
+		-- Expert+ v3: 1.16
 
 EC1FF78D8E085CA4: 20.0 - ???
 	-- Normal, Hard, Expert: 20.0
@@ -176,6 +180,8 @@ ABBF319E8E085CA4: 200.0 - max distance? (TSR only)
 
 20F43FAE1267E4FB: 3 - start boost
 	-- Normal: 1
+
+132AB6B58E085CA4: 200.0 - super target distance?
 
 514429B78E085CA4: 200.0 - max distance?
 	-- Normal, Hard, Expert: 200.0
