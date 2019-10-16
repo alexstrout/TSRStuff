@@ -9,18 +9,19 @@ OpponentsProfileTeamExpt - 0x44CC
 	-- Even "Default/On" flag is kept the same (team stuff?)
 	-- Teammate1 / Teammate2 thus appear to become weak opponents
 		-- Maybe they're not used at all? Might just recycle Opponents...
-	-- Test values:
-		-- Expert+ v2: 4C440000 -> CC440000
-		-- Expert+ Test: 4C440000 -> CC440000
-		-- Expert+ v3: [All] -> CC440000 (etc.)
+	-- Expert+ v2: [All] -> CC440000 (etc.)
 
 ------
 ZoneProfileDefault::Too Far Behind
 ------
-BA9606038E085CA4: max total distance? (e.g. ZoneProfileStartline)
-EDA7534B8E085CA4: min zone-based distance?
+BA9606038E085CA4: -1.0 - max total distance? (e.g. ZoneProfileStartline - only 5 in ZoneProfileDefault Zone1...Zone4 in SART)
+	-- Expert+ v2: 2400.0
+EDA7534B8E085CA4: -10000.0 - min zone-based distance?
 7630054F8E085CA4: 5.0 - max zone-based pacing boost? (all 5.0 - sole profile identical to SART Expert profiles)
-6D59A5998E085CA4: max zone-based distance?
+	-- Expert+ v2: 50.0
+6D59A5998E085CA4: -200.0 - max zone-based distance?
+42A1E3A58E085CA4: 0.0 - position offset? (generally 0.1 or less in SART, only 1 in ZoneProfileEnd / ZoneProfileStartline)
+	-- Expert+ v2: 1200.0
 
 ------
 HandlingProfile::knuckles
@@ -46,22 +47,13 @@ OpponentsProfileTeamExpt::Teammate1
 ------
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
 	-- Normal, Hard, Expert: 1.4
-	-- Test values:
-		-- Crazy video: 1.4 (oops!)
-		-- Expert+: 1.6
-		-- SuperExpert+: 3.0 (TODO for SART)
-		-- Expert+ v2: 1.6
-		-- Expert+ v3: 1.8
+	-- Expert+: 1.6
 
 5B5543118E085CA4: 0.5 - pathing weight? (-0.1 per opponent in SART)
 	-- Normal, Hard, Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
-	-- Test values:
-		-- Expert+ v2: 0.0
 
 3D4E421D8E085CA4: 0.5 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.5 (0 for Eggpawn only? And various Opponent non-team KOTH)
-	-- Test values:
-		-- Expert+ v2: 0.0
 
 6D9FC8278E085CA4: -10.0 - ??? (TSR only)
 	-- Normal, Hard: -30.0
@@ -69,12 +61,7 @@ OpponentsProfileTeamExpt::Teammate1
 
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
 	-- Normal, Hard, Expert: 1.0
-	-- Test values:
-		-- Crazy video: 5.0
-		-- Expert+: 1.2
-		-- SuperExpert+: 2.0
-		-- Expert+ v2: 1.2
-		-- Expert+ Test: 1.2
+	-- Expert+: 1.2
 
 6607CC548E085CA4: 1.0 - drifting! (TSR only)
 	-- Hard and Expert: 1.0
@@ -100,15 +87,11 @@ CDECA47D8E085CA4: 20.0 - ??? (TSR only)
 
 EC1FF78D8E085CA4: 0.0 - ??? (25 in SART Mental, 20 in Max / Med)
 	-- Normal, Hard, Expert: 0.0
-	-- Test values:
-		-- Expert+ v2: 20.0
 
 CF7E08938E085CA4: 30.0 (TSR only)
 
 181C509B8E085CA4: 5.0 - ??? (TSR only)
 	-- Normal, Hard, Expert: 5.0 (except 20.0 for Default! And non-team KOTH)
-	-- Test values:
-		-- Expert+ v2: 20.0
 
 ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal, Hard, Expert: 50.0
@@ -130,13 +113,9 @@ ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 98543DB78E085CA4: 8.0 - ??? (TSR only)
 	-- Normal, Hard: 25.0
 	-- Expert: 8.0
-	-- Test values:
-		-- Expert+ v2: 0.0
 
 C61D13C38E085CA4: 0.0 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.0
-	-- Test values:
-		-- Expert+ v2: 2.0
 
 834C23EA8E085CA4: 5.0 (10 in SART?)
 
@@ -150,13 +129,8 @@ F88477EE8E085CA4: 0.5 - ??? (TSR only)
 
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
 	-- Normal, Hard, Expert: 0.7
-	-- Test values:
-		-- Crazy video: 1.2
-		-- Expert+: 1.0
-		-- SuperExpert+: 1.08
-		-- Expert+ v2: 1.0
-		-- Expert+ Test: 1.2
-		-- Expert+ v3: 1.0 (all difficulties)
+	-- Expert+: 1.0
+	-- Expert+ v2: 1.0 (all difficulties)
 
 ------
 OpponentsProfileTeamExpt::Opponent1 (where different)
@@ -164,13 +138,12 @@ OpponentsProfileTeamExpt::Opponent1 (where different)
 8C2856078E085CA4: 1.2 - max pacing
 	-- Normal: 1.2
 	-- Hard and Expert: 1.4 (or 1.2 for Hard and Expert in non-team)
+	-- Expert+ v2: 1.04 (Normal), 1.08 (Hard), 1.12 (Expert)
 
 856C17428E085CA4: 1.08 - target pacing
 	-- Hard: 1.08 (Oops! 1.04 in non-team)
 	-- Expert: 1.08
-	-- Test values:
-		-- Crazy video: 3.0
-		-- Expert+ v3: 1.16
+	-- Expert+ v2: 1.04 (Hard)
 
 EC1FF78D8E085CA4: 20.0 - ???
 	-- Normal, Hard, Expert: 20.0
@@ -225,7 +198,7 @@ C0AFC8DE (OpponentsProfileClassAllStarMed) -> 06E2A975
 TODO / Ideas / Etc.
 ------
 Heretic difficulty puns
-	-- Thou needeth a shock-wisp
+	-- Thou needeth a lightning-wisp
 	-- Yellowboosts-r-us
 	-- Bringest them oneth
 	-- Thou art a SART-meister
