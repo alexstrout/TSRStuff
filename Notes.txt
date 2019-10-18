@@ -14,14 +14,13 @@ OpponentsProfileTeamExpt - 0x44CC
 ------
 ZoneProfileDefault::Too Far Behind
 ------
-BA9606038E085CA4: -1.0 - max total distance? (e.g. ZoneProfileStartline - only 5 in ZoneProfileDefault Zone1...Zone4 in SART)
-	-- Expert+ v2: 2400.0
+BA9606038E085CA4: -1.0 - max total distance? (all -1.0 except 120.0 for ZoneProfileStartline - only 5.0 for ZoneProfileDefault Zone1...Zone4 in SART)
+	-- Expert+ v2: 5.0 (for ZoneProfileStartline only)
 EDA7534B8E085CA4: -10000.0 - min zone-based distance?
 7630054F8E085CA4: 5.0 - max zone-based pacing boost? (all 5.0 - sole profile identical to SART Expert profiles)
-	-- Expert+ v2: 50.0
 6D59A5998E085CA4: -200.0 - max zone-based distance?
-42A1E3A58E085CA4: 0.0 - position offset? (generally 0.1 or less in SART, only 1 in ZoneProfileEnd / ZoneProfileStartline)
-	-- Expert+ v2: 1200.0
+42A1E3A58E085CA4: 0.0 - max zone-based super pacing boost? (all 0.0 - 0.1 or less in SART, only 1.0 for ZoneProfileEnd / ZoneProfileStartline)
+	-- Expert+ v2: 2.0 (1.0 for ZoneProfileStartline)
 
 ------
 HandlingProfile::knuckles
@@ -138,12 +137,12 @@ OpponentsProfileTeamExpt::Opponent1 (where different)
 8C2856078E085CA4: 1.2 - max pacing
 	-- Normal: 1.2
 	-- Hard and Expert: 1.4 (or 1.2 for Hard and Expert in non-team)
-	-- Expert+ v2: 1.04 (Normal), 1.08 (Hard), 1.12 (Expert)
+	-- Expert+ v2: 0.6 (Normal), 0.9 (Hard), 1.12 (Expert)
 
 856C17428E085CA4: 1.08 - target pacing
 	-- Hard: 1.08 (Oops! 1.04 in non-team)
 	-- Expert: 1.08
-	-- Expert+ v2: 1.04 (Hard)
+	-- Expert+ v2: 0.5 (Normal), 0.8 (Hard), 1.02 (Expert)
 
 EC1FF78D8E085CA4: 20.0 - ???
 	-- Normal, Hard, Expert: 20.0
@@ -167,6 +166,7 @@ C61D13C38E085CA4: 2.0 - ???
 
 75A392F88E085CA4: 0.8 - min pacing
 	-- Normal, Hard, Expert: 0.8
+	-- Expert+ v2: 0.5 (Normal), 0.8 (Hard), 1.02 (Expert)
 
 ------
 SART-Specific Stuff
