@@ -137,12 +137,12 @@ OpponentsProfileTeamExpt::Opponent1 (where different)
 8C2856078E085CA4: 1.2 - max pacing
 	-- Normal: 1.2
 	-- Hard and Expert: 1.4 (or 1.2 for Hard and Expert in non-team)
-	-- Expert+ v2: 0.6 (Normal), 0.9 (Hard), 1.12 (Expert)
+	-- Expert+ v2: 0.5 (Normal), 0.8 (Hard), 1.12 (Expert)
 
 856C17428E085CA4: 1.08 - target pacing
 	-- Hard: 1.08 (Oops! 1.04 in non-team)
 	-- Expert: 1.08
-	-- Expert+ v2: 0.5 (Normal), 0.8 (Hard), 1.02 (Expert)
+	-- Expert+ v2: 0.4 (Normal), 0.7 (Hard), 1.02 (Expert)
 
 EC1FF78D8E085CA4: 20.0 - ???
 	-- Normal, Hard, Expert: 20.0
@@ -166,7 +166,7 @@ C61D13C38E085CA4: 2.0 - ???
 
 75A392F88E085CA4: 0.8 - min pacing
 	-- Normal, Hard, Expert: 0.8
-	-- Expert+ v2: 0.5 (Normal), 0.8 (Hard), 1.02 (Expert)
+	-- Expert+ v2: 0.4 (Normal), 0.7 (Hard), 1.02 (Expert)
 
 ------
 SART-Specific Stuff
