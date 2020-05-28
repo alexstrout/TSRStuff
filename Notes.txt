@@ -11,7 +11,7 @@ OpponentsProfileTeamExpt - 0x44CC
 		-- Maybe they're not used at all? Might just recycle Opponents...
 	-- Expert+ v2: [All] -> CC440000 (etc.)
 	-- Expert+ v3: [All] -> CC440000 (etc.)
-	-- Expert+ v3: OpponentsProfileTeamExpert -> OpponentsProfileDefault
+	-- Expert+ v3: OpponentsProfileTeamExpt -> OpponentsProfileDefault
 
 ------
 ZoneProfileDefault::Too Far Behind
@@ -25,14 +25,14 @@ EDA7534B8E085CA4: -10000.0 - min zone-based distance?
 	-- Expert+ v2: 2.0 (1.0 for ZoneProfileStartline)
 
 ------
-HandlingProfile::knuckles
+HandlingProfile::default
 ------
 80F1AE128E085CA4: -6.0 - ???
-
 3F1D8D1F8E085CA4: 10.0 - ???
-305E0A4C8E085CA4: 0.35 - ???
 
+305E0A4C8E085CA4: 0.35 - ???
 8402E7618E085CA4: 2.0 - ???
+
 C49F62A58E085CA4: 0.2 - ???
 
 E276D2C38E085CA4: 25.0 - inner curve avoid distance?
@@ -44,12 +44,16 @@ D65D22CC8E085CA4: 0.07 - drifting curve? (lower - crashing into inner turn, e.g.
 41C39AF78E085CA4: 0.59 - max(?) drift throttle?
 
 ------
-OpponentsProfileTeamExpt::Teammate1
+OpponentsProfileTeamExpt::Teammate1 (* = OpponentsProfileDefault / KOTH only)
 ------
+A9EE9E068E085CA4: 0.15* - ???
+
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
 	-- Normal, Hard, Expert: 1.4
 	-- Expert+: 1.6
 	-- Expert+ v3: 1.5
+
+003FD9108E085CA4: 0.0* - ???
 
 5B5543118E085CA4: 0.5 - pathing weight? (-0.1 per opponent in SART)
 	-- Normal, Hard, Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
@@ -63,10 +67,14 @@ OpponentsProfileTeamExpt::Teammate1
 	-- Normal, Hard: -30.0
 	-- Expert: -10.0
 
+8B67F23E8E085CA4: 0.0* - ???
+
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
 	-- Normal, Hard, Expert: 1.0
 	-- Expert+: 1.2
 	-- Expert+ v3: 1.5
+
+BC54864B8E085CA4: 0.0* - ???
 
 6607CC548E085CA4: 1.0 - drifting! (TSR only)
 	-- Hard and Expert: 1.0
@@ -83,6 +91,8 @@ E4DA7A628E085CA4: 40.0 - target distance? (decreases per opponent in SART)
 5C20EE628E085CA4: 0.0 - ??? (TSR only)
 	-- Normal, Hard: 0.1
 	-- Expert: 0.0
+
+000416728E085CA4: 0.0* - ???
 
 CDECA47D8E085CA4: 20.0 - ??? (TSR only)
 	-- Normal, Hard, Expert: 20.0
@@ -102,11 +112,17 @@ CF7E08938E085CA4: 30.0 (TSR only)
 ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal, Hard, Expert: 50.0
 
+9EF7F4A98E085CA4: 0.1* - ???
+
+2AC669AC8E085CA4: 0.0* - ???
+
 20F43FAE1267E4FB: 3 - start boost
 	-- Normal: 2
 	-- Hard: 2
 	-- Expert: 3
 	-- Expert+ v3: 3
+
+5C2B47AF8E085CA4: 0.0* - ???
 
 85994FB48E085CA4: 0.0 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
@@ -120,6 +136,8 @@ ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 98543DB78E085CA4: 8.0 - ??? (TSR only)
 	-- Normal, Hard: 25.0
 	-- Expert: 8.0
+
+7C5AB8BC8E085CA4: 0.0* - ???
 
 C61D13C38E085CA4: 0.0 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.0
@@ -142,6 +160,8 @@ F88477EE8E085CA4: 0.5 - ??? (TSR only)
 	-- Expert+: 1.0
 	-- Expert+ v2: 1.0 (all difficulties)
 	-- Expert+ v3: 1.5
+
+72FEEEFF8E085CA4: 0.0* - ???
 
 ------
 OpponentsProfileTeamExpt::Opponent1 (where different)
