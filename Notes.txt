@@ -10,6 +10,8 @@ OpponentsProfileTeamExpt - 0x44CC
 	-- Teammate1 / Teammate2 thus appear to become weak opponents
 		-- Maybe they're not used at all? Might just recycle Opponents...
 	-- Expert+ v2: [All] -> CC440000 (etc.)
+	-- Expert+ v3: [All] -> CC440000 (etc.)
+	-- Expert+ v3: OpponentsProfileTeamExpert -> OpponentsProfileDefault
 
 ------
 ZoneProfileDefault::Too Far Behind
@@ -47,12 +49,15 @@ OpponentsProfileTeamExpt::Teammate1
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
 	-- Normal, Hard, Expert: 1.4
 	-- Expert+: 1.6
+	-- Expert+ v3: 1.5
 
 5B5543118E085CA4: 0.5 - pathing weight? (-0.1 per opponent in SART)
 	-- Normal, Hard, Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
+	-- Expert+ v3: 0.2
 
 3D4E421D8E085CA4: 0.5 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.5 (0 for Eggpawn only? And various Opponent non-team KOTH)
+	-- Expert+ v3: 0.2
 
 6D9FC8278E085CA4: -10.0 - ??? (TSR only)
 	-- Normal, Hard: -30.0
@@ -61,15 +66,17 @@ OpponentsProfileTeamExpt::Teammate1
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
 	-- Normal, Hard, Expert: 1.0
 	-- Expert+: 1.2
+	-- Expert+ v3: 1.5
 
 6607CC548E085CA4: 1.0 - drifting! (TSR only)
 	-- Hard and Expert: 1.0
 	-- Normal: 0.8
 
-8FFE5B568E085CA4: 0.0 - stunts!
+8FFE5B568E085CA4: 0.0 - stunts! And start boost failure
 	-- Normal: 0.5
 	-- Hard: 0.2
 	-- Expert: 0.0
+	-- Expert+ v3: 0.1
 
 E4DA7A628E085CA4: 40.0 - target distance? (decreases per opponent in SART)
 
@@ -84,7 +91,7 @@ CDECA47D8E085CA4: 20.0 - ??? (TSR only)
 
 1A8E28838E085CA4: 35.0 (always 35 in SART???)
 
-EC1FF78D8E085CA4: 0.0 - ??? (25 in SART Mental, 20 in Max / Med)
+EC1FF78D8E085CA4: 0.0 - target distance? (25 in SART Mental, 20 in Max / Med)
 	-- Normal, Hard, Expert: 0.0
 
 CF7E08938E085CA4: 30.0 (TSR only)
@@ -99,6 +106,7 @@ ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal: 2
 	-- Hard: 2
 	-- Expert: 3
+	-- Expert+ v3: 3
 
 85994FB48E085CA4: 0.0 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
@@ -119,17 +127,21 @@ C61D13C38E085CA4: 0.0 - ??? (TSR only)
 834C23EA8E085CA4: 5.0 (10 in SART?)
 
 F88477EE8E085CA4: 0.5 - ??? (TSR only)
+	-- Expert+ v3: 0.2
 
 61B501EF8E085CA4: 0.0 (TSR only)
+	-- Expert+ v3: 0.1
 
 7F16B9F38E085CA4: 40.0 - target distance? (decreases per opponent in SART)
 
 22F398F48E085CA4: 0.0 (TSR only)
+	-- Expert+ v3: 0.1
 
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
 	-- Normal, Hard, Expert: 0.7
 	-- Expert+: 1.0
 	-- Expert+ v2: 1.0 (all difficulties)
+	-- Expert+ v3: 1.5
 
 ------
 OpponentsProfileTeamExpt::Opponent1 (where different)
