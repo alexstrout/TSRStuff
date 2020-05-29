@@ -11,7 +11,7 @@ OpponentsProfileTeamExpt - 0x44CC
 		-- Maybe they're not used at all? Might just recycle Opponents...
 	-- Expert+ v2: [All] -> CC440000 (etc.)
 	-- Expert+ v3: [All] -> CC440000 (etc.)
-	-- Expert+ v3: OpponentsProfileTeamExpt -> OpponentsProfileDefault
+	-- Expert+ v3: OpponentsProfileTeamExpt (etc.) -> OpponentsProfileDefault
 
 ------
 ZoneProfileDefault::Too Far Behind
@@ -57,11 +57,9 @@ A9EE9E068E085CA4: 0.15* - ???
 
 5B5543118E085CA4: 0.5 - pathing weight? (-0.1 per opponent in SART)
 	-- Normal, Hard, Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
-	-- Expert+ v3: 0.2
 
 3D4E421D8E085CA4: 0.5 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.5 (0 for Eggpawn only? And various Opponent non-team KOTH)
-	-- Expert+ v3: 0.2
 
 6D9FC8278E085CA4: -10.0 - ??? (TSR only)
 	-- Normal, Hard: -30.0
@@ -145,15 +143,12 @@ C61D13C38E085CA4: 0.0 - ??? (TSR only)
 834C23EA8E085CA4: 5.0 (10 in SART?)
 
 F88477EE8E085CA4: 0.5 - ??? (TSR only)
-	-- Expert+ v3: 0.2
 
 61B501EF8E085CA4: 0.0 (TSR only)
-	-- Expert+ v3: 0.1
 
 7F16B9F38E085CA4: 40.0 - target distance? (decreases per opponent in SART)
 
 22F398F48E085CA4: 0.0 (TSR only)
-	-- Expert+ v3: 0.1
 
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
 	-- Normal, Hard, Expert: 0.7
