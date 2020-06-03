@@ -9,7 +9,7 @@ OpponentsProfileTeamExpt - 0x44CC
 	-- Even "Default/On" flag is kept the same (team stuff?)
 	-- Teammate1 / Teammate2 thus appear to become weak opponents
 		-- Maybe they're not used at all? Might just recycle Opponents...
-	-- Expert+: [All] -> 20540000 / 58540000 / 90540000 (OpponentsProfileTeamKothNorm / Hard / Expt)
+	-- Expert+: [All] -> 8C530000 / BC530000 / EC530000 (OpponentsProfileKothNorm / Hard / Expt)
 
 ------
 ZoneProfileDefault::Too Far Behind
@@ -46,7 +46,7 @@ A9EE9E068E085CA4: 0.15* - ???
 
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
 	-- Normal, Hard, Expert: 1.4
-	-- Expert+: 1.7
+	-- Expert+: 1 / 1.2 / 1.5 (Norm / Hard / Expt)
 
 003FD9108E085CA4: 0.0* - ???
 
@@ -54,7 +54,7 @@ A9EE9E068E085CA4: 0.15* - ???
 	-- Normal, Hard, Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
 
 3D4E421D8E085CA4: 0.5 - ??? (TSR only)
-	-- Normal, Hard, Expert: 0.5 (0 for Eggpawn only? And various Opponent non-team KOTH)
+	-- Normal, Hard, Expert: 0.5 (0 for Eggpawn only? But increased for various Opponent non-team KOTH)
 
 6D9FC8278E085CA4: -10.0 - ??? (TSR only)
 	-- Normal, Hard: -30.0
@@ -64,7 +64,7 @@ A9EE9E068E085CA4: 0.15* - ???
 
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
 	-- Normal, Hard, Expert: 1.0
-	-- Expert+: 1.7
+	-- Expert+: 1 / 1.2 / 1.5 (Norm / Hard / Expt)
 
 BC54864B8E085CA4: 0.0* - ???
 
@@ -76,6 +76,7 @@ BC54864B8E085CA4: 0.0* - ???
 	-- Normal: 0.5
 	-- Hard: 0.2
 	-- Expert: 0.0
+	-- Expert+: 0.1
 
 E4DA7A628E085CA4: 40.0 - target distance? (decreases per opponent in SART)
 
@@ -103,7 +104,7 @@ CF7E08938E085CA4: 30.0 (TSR only)
 ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal, Hard, Expert: 50.0
 
-9EF7F4A98E085CA4: 0.1* - ???
+9EF7F4A98E085CA4: 0.1* - ??? (generally -0.01 per opponent in SART, with steps)
 
 2AC669AC8E085CA4: 0.0* - ???
 
@@ -118,6 +119,8 @@ ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal, Hard, Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
 
 132AB6B58E085CA4: 0.0 - super target distance? (Opp2 only in SART)
+
+234616B6259845B7: "On" - Teammate status? (TSR only)
 
 514429B78E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal: 50.0
@@ -144,7 +147,7 @@ F88477EE8E085CA4: 0.5 - ??? (TSR only)
 
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
 	-- Normal, Hard, Expert: 0.7
-	-- Expert+: 1.7
+	-- Expert+: 1 / 1.2 / 1.5 (Norm / Hard / Expt)
 
 72FEEEFF8E085CA4: 0.0* - ???
 
