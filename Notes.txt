@@ -42,7 +42,7 @@ D65D22CC8E085CA4: 0.07 - drifting curve? (lower - crashing into inner turn, e.g.
 ------
 OpponentsProfileTeamExpt::Teammate1 (* = OpponentsProfileDefault / KOTH only)
 ------
-A9EE9E068E085CA4: 0.15* - ???
+A9EE9E068E085CA4: 0.15* - ??? (generally 25.0 non-expert, 20.0 expert in SART)
 
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
 	-- Normal, Hard, Expert: 1.4
@@ -60,13 +60,13 @@ A9EE9E068E085CA4: 0.15* - ???
 	-- Normal, Hard: -30.0
 	-- Expert: -10.0
 
-8B67F23E8E085CA4: 0.0* - ???
+8B67F23E8E085CA4: 0.0* - ??? (TSR only)
 
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
 	-- Normal, Hard, Expert: 1.0
 	-- Expert+: 1 / 1.2 / 1.5 (Norm / Hard / Expt)
 
-BC54864B8E085CA4: 0.0* - ???
+BC54864B8E085CA4: 0.0* - ??? (TSR only)
 
 6607CC548E085CA4: 1.0 - drifting! (TSR only)
 	-- Hard and Expert: 1.0
@@ -106,14 +106,14 @@ ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 
 9EF7F4A98E085CA4: 0.1* - ??? (generally -0.01 per opponent in SART, with steps)
 
-2AC669AC8E085CA4: 0.0* - ???
+2AC669AC8E085CA4: 0.0* - ??? (TSR only)
 
 20F43FAE1267E4FB: 3 - start boost
 	-- Normal: 2
 	-- Hard: 2
 	-- Expert: 3
 
-5C2B47AF8E085CA4: 0.0* - ???
+5C2B47AF8E085CA4: 0.0* - ??? (TSR only)
 
 85994FB48E085CA4: 0.0 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
@@ -130,7 +130,7 @@ ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal, Hard: 25.0
 	-- Expert: 8.0
 
-7C5AB8BC8E085CA4: 0.0* - ???
+7C5AB8BC8E085CA4: 0.0* - ??? (TSR only)
 
 C61D13C38E085CA4: 0.0 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.0
@@ -149,7 +149,7 @@ F88477EE8E085CA4: 0.5 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.7
 	-- Expert+: 1 / 1.2 / 1.5 (Norm / Hard / Expt)
 
-72FEEEFF8E085CA4: 0.0* - ???
+72FEEEFF8E085CA4: 0.0* - ??? (TSR only)
 
 ------
 OpponentsProfileTeamExpt::Opponent1 (where different)
