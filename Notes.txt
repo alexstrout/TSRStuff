@@ -17,18 +17,20 @@ ZoneProfileDefault::Too Far Behind
 BA9606038E085CA4: -1.0 - max total distance? (all -1.0 except 120.0 for ZoneProfileStartline - only 5.0 for ZoneProfileDefault Zone1...Zone4 in SART)
 EDA7534B8E085CA4: -10000.0 - min zone-based distance?
 7630054F8E085CA4: 5.0 - max zone-based pacing boost? (all 5.0 - sole profile identical to SART Expert profiles)
+	-- Expert+: 1.02
 6D59A5998E085CA4: -200.0 - max zone-based distance?
 42A1E3A58E085CA4: 0.0 - max zone-based super pacing boost? (all 0.0 - 0.1 or less in SART, only 1.0 for ZoneProfileEnd / ZoneProfileStartline)
 
 ------
 HandlingProfile::default
 ------
-80F1AE128E085CA4: -6.0 - ???
-3F1D8D1F8E085CA4: 10.0 - ???
+80F1AE128E085CA4: -6.0 - curve factor? (0 = less outer wall)
+	-- Expert+: 0.0
 
+3F1D8D1F8E085CA4: 10.0 - inner curve avoid distance?
 305E0A4C8E085CA4: 0.35 - ???
-8402E7618E085CA4: 2.0 - ???
 
+8402E7618E085CA4: 2.0 - ???
 C49F62A58E085CA4: 0.2 - ???
 
 E276D2C38E085CA4: 25.0 - inner curve avoid distance?
@@ -38,6 +40,7 @@ D65D22CC8E085CA4: 0.07 - drifting curve? (lower - crashing into inner turn, e.g.
 1F755CE58E085CA4: 0.2 - drifting curve? (higher - straighter, e.g. Frozen Junkyard)
 
 41C39AF78E085CA4: 0.59 - max(?) drift throttle?
+	-- Expert+: 0.4
 
 ------
 OpponentsProfileTeamExpt::Teammate1 (* = OpponentsProfileDefault / KOTH only)
@@ -46,7 +49,6 @@ A9EE9E068E085CA4: 0.15* - ??? (generally 25.0 non-expert, 20.0 expert in SART)
 
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
 	-- Normal, Hard, Expert: 1.4
-	-- Expert+: 1 / 1.2 / 1.5 (Norm / Hard / Expt)
 
 003FD9108E085CA4: 0.0* - ???
 
@@ -64,7 +66,6 @@ A9EE9E068E085CA4: 0.15* - ??? (generally 25.0 non-expert, 20.0 expert in SART)
 
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
 	-- Normal, Hard, Expert: 1.0
-	-- Expert+: 1 / 1.2 / 1.5 (Norm / Hard / Expt)
 
 BC54864B8E085CA4: 0.0* - ??? (TSR only)
 
@@ -119,6 +120,7 @@ ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal, Hard, Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
 
 132AB6B58E085CA4: 0.0 - super target distance? (Opp2 only in SART)
+	-- Expert+: 2000.0 (Teammates only in Medium, Hard)
 
 234616B6259845B7: "On" - Teammate status? (TSR only)
 
@@ -147,7 +149,6 @@ F88477EE8E085CA4: 0.5 - ??? (TSR only)
 
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
 	-- Normal, Hard, Expert: 0.7
-	-- Expert+: 1 / 1.2 / 1.5 (Norm / Hard / Expt)
 
 72FEEEFF8E085CA4: 0.0* - ??? (TSR only)
 
@@ -210,6 +211,22 @@ C0AFC8DE (OpponentsProfileClassAllStarMed) -> 06E2A975
 ::Opponent6
 9337EB038E085CA4: 0.88 - ???
 	-- Expert: 0.88
+
+------
+Tracks.dat
+------
+::DefaultTrack
+3DB0EC298E085CA4: 150.0
+21BFE2358E085CA4: 110.0
+C74E15458E085CA4: 120.0
+7174AD4B8E085CA4: 150.0
+4F1CEA5F8E085CA4: 1.0 - Minimap icon size
+BA40C9618E085CA4: 30.0
+F72001778E085CA4: 0.0
+884CB5918E085CA4: 0.0
+DE7084C48E085CA4: 500.0
+A6BF64DC8E085CA4: 110.0
+2F923FFB8E085CA4: 120.0
 
 ------
 TODO / Ideas / Etc.
