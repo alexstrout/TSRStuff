@@ -17,15 +17,14 @@ ZoneProfileDefault::Too Far Behind
 BA9606038E085CA4: -1.0 - max total distance? (all -1.0 except 120.0 for ZoneProfileStartline - only 5.0 for ZoneProfileDefault Zone1...Zone4 in SART)
 EDA7534B8E085CA4: -10000.0 - min zone-based distance?
 7630054F8E085CA4: 5.0 - max zone-based pacing boost? (all 5.0 - sole profile identical to SART Expert profiles)
-	-- Expert+: 1.02
 6D59A5998E085CA4: -200.0 - max zone-based distance?
 42A1E3A58E085CA4: 0.0 - max zone-based super pacing boost? (all 0.0 - 0.1 or less in SART, only 1.0 for ZoneProfileEnd / ZoneProfileStartline)
+	-- Expert+: 0.1
 
 ------
 HandlingProfile::default
 ------
 80F1AE128E085CA4: -6.0 - curve factor? (0 = less outer wall)
-	-- Expert+: 0.0
 
 3F1D8D1F8E085CA4: 10.0 - inner curve avoid distance?
 305E0A4C8E085CA4: 0.35 - ???
@@ -40,7 +39,6 @@ D65D22CC8E085CA4: 0.07 - drifting curve? (lower - crashing into inner turn, e.g.
 1F755CE58E085CA4: 0.2 - drifting curve? (higher - straighter, e.g. Frozen Junkyard)
 
 41C39AF78E085CA4: 0.59 - max(?) drift throttle?
-	-- Expert+: 0.4
 
 ------
 OpponentsProfileTeamExpt::Teammate1 (* = OpponentsProfileDefault / KOTH only)
@@ -49,11 +47,16 @@ A9EE9E068E085CA4: 0.15* - ??? (generally 25.0 non-expert, 20.0 expert in SART)
 
 8C2856078E085CA4: 1.4 - max pacing (e.g. behind)
 	-- Normal, Hard, Expert: 1.4
+	-- Expert+: 1.42 (teammates only, all difficulties)
+	-- Expert+: 1.32
 
 003FD9108E085CA4: 0.0* - ???
 
 5B5543118E085CA4: 0.5 - pathing weight? (-0.1 per opponent in SART)
 	-- Normal, Hard, Expert: 0.5 (0.0 in non-team KOTH, randomly 0.0, 2.0, 3.0... 8.0, 16.0!? in some Opponent World Tour difficulties?)
+	-- Expert: 1.0 (-0.1 per team, all difficulties)
+
+A24AE113FB642A1E: 7470120F (Aggressive) - Weapons Profile
 
 3D4E421D8E085CA4: 0.5 - ??? (TSR only)
 	-- Normal, Hard, Expert: 0.5 (0 for Eggpawn only? But increased for various Opponent non-team KOTH)
@@ -66,6 +69,8 @@ A9EE9E068E085CA4: 0.15* - ??? (generally 25.0 non-expert, 20.0 expert in SART)
 
 856C17428E085CA4: 1.0 - target pacing (e.g. within defined distance of you - for teammates, basically right in front)
 	-- Normal, Hard, Expert: 1.0
+	-- Expert+: 1.41 (teammates only, all difficulties)
+	-- Expert+: 1.31
 
 BC54864B8E085CA4: 0.0* - ??? (TSR only)
 
@@ -120,7 +125,8 @@ ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal, Hard, Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
 
 132AB6B58E085CA4: 0.0 - super target distance? (Opp2 only in SART)
-	-- Expert+: 2000.0 (Teammates only in Medium, Hard)
+	-- Expert+: 500.0 (teammates only, all difficulties)
+	-- Expert+: 200.0
 
 234616B6259845B7: "On" - Teammate status? (TSR only)
 
@@ -149,6 +155,8 @@ F88477EE8E085CA4: 0.5 - ??? (TSR only)
 
 75A392F88E085CA4: 0.7 - min pacing (e.g. ahead)
 	-- Normal, Hard, Expert: 0.7
+	-- Expert+: 1.35 (teammates only, all difficulties)
+	-- Expert+: 1.25
 
 72FEEEFF8E085CA4: 0.0* - ??? (TSR only)
 
@@ -158,6 +166,8 @@ OpponentsProfileTeamExpt::Opponent1 (where different)
 8C2856078E085CA4: 1.2 - max pacing
 	-- Normal: 1.2
 	-- Hard and Expert: 1.4 (or 1.2 for Hard and Expert in non-team)
+
+A24AE113FB642A1E: E6AE5FBE (Regular) - Weapons Profile
 
 856C17428E085CA4: 1.08 - target pacing
 	-- Hard: 1.08 (Oops! 1.04 in non-team)
