@@ -19,7 +19,6 @@ EDA7534B8E085CA4: -10000.0 - min zone-based distance?
 7630054F8E085CA4: 5.0 - max zone-based pacing boost? (all 5.0 - sole profile identical to SART Expert profiles)
 6D59A5998E085CA4: -200.0 - max zone-based distance?
 42A1E3A58E085CA4: 0.0 - max zone-based super pacing boost? (all 0.0 - 0.1 or less in SART, only 1.0 for ZoneProfileEnd / ZoneProfileStartline)
-	-- Expert+: 0.1
 
 ------
 HandlingProfile::default
