@@ -125,8 +125,6 @@ ABBF319E8E085CA4: 50.0 - max distance? (TSR only)
 	-- Normal, Hard, Expert: 0.0 (ramdomly 0.0, 8.0, 16.0 on non-expert difficulties?)
 
 132AB6B58E085CA4: 0.0 - super target distance? (Opp2 only in SART)
-	-- Expert+: 500.0 (teammates only, all difficulties)
-	-- Expert+: 200.0
 
 234616B6259845B7: "On" - Teammate status? (TSR only)
 
