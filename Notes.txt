@@ -24,6 +24,7 @@ EDA7534B8E085CA4: -10000.0 - min zone-based distance?
 HandlingProfile::default
 ------
 80F1AE128E085CA4: -6.0 - curve factor? (0 = less outer wall)
+	-- Expert+: -600.0
 
 3F1D8D1F8E085CA4: 10.0 - inner curve avoid distance?
 305E0A4C8E085CA4: 0.35 - ???
